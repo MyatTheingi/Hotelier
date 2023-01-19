@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9f52ba</color>
+    <color name="colorPrimaryDark">#7b3094</color>
+    <color name="colorAccent">#ff9807</color>
+
+
+    //color Button
+    <color name="colorMakeReservation">#1bc170</color>
+    <color name="colorContinue">#8BC24A</color>
+    <color name="colorError">#F44236</color>
+    <color name="colorReservation">#009aed</color>
+    <color name="colorWarning">#f7a430</color>
+
+    //status color
+    <color name="activeColor">#0cd216</color>
+    <color name="inactiveColor">#df1709</color>
+    <color name="newColor">#005aea</color>
+
+    //color for background
+    <color name="colorBackground">#aaa</color>
+    <color name="colorForeground">#ddd</color>
+
+    //Accessories
+    <color name="colorMenu">#36383d</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorDarkGray">#aaa</color>
+    <color name="colorTransparent">#9affffff</color>
+
+</resources>

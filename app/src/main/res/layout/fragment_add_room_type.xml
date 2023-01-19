@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add.AddRoomTypeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/add_layoutRT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-60dp"
+        android:layout_marginRight="@dimen/title_margin_right"
+        android:background="@drawable/layout_administration"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Room Type"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Informations"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_cardviewRT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_layoutRT"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_horizontal_padding"
+            android:paddingLeft="@dimen/innerlayout_horizontal_padding"
+            android:paddingRight="@dimen/innerlayout_horizontal_padding"
+            android:paddingTop="@dimen/innerlayout_vertical_padding">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:text="Information"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/dataRT_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/inner_item_marging"
+                                android:hint="ID"
+                                android:inputType="number"
+                                android:padding="@dimen/inner_item_padding"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlack"
+                                android:textSize="@dimen/header_text_size" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/dataRT_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/inner_item_marging"
+                                android:hint="Name"
+                                android:padding="@dimen/inner_item_padding"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlack"
+                                android:textSize="@dimen/header_text_size" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:text="Bed Types"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <HorizontalScrollView
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupBT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:theme="@style/MyRaidoButton" />
+                    </HorizontalScrollView>
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/layout_add_bed_type"
+                        android:layout_width="250dp"
+                        android:layout_marginLeft="@dimen/inner_item_marging"
+                        android:background="@drawable/btn_continue"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:drawableLeft="@drawable/ic_menu_bed_types" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/inner_item_marging"
+                            android:text="ADD MORE BED TYPES"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ddd" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:text="Features"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/header_text_size"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbFeature_wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_feature_wifi"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:text="Wifi"
+                        android:theme="@style/MyCheckbox" />
+
+                    <CheckBox
+                        android:id="@+id/cbFeature_breakfast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_feature_breakfast"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:text="Breakfast"
+                        android:theme="@style/MyCheckbox" />
+
+                    <CheckBox
+                        android:id="@+id/cbFeature_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_feature_news_paper"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:text="News Paper"
+                        android:theme="@style/MyCheckbox" />
+
+                    <CheckBox
+
+                        android:id="@+id/cbFeature_aircon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_feature_aircon"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:text="Aircon"
+                        android:theme="@style/MyCheckbox" />
+
+                    <CheckBox
+                        android:id="@+id/cbFeature_swimmingpool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_feature_swimming_pool"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:text="Swimming Pool"
+                        android:theme="@style/MyCheckbox" />
+
+                    <CheckBox
+                        android:id="@+id/cbFeature_powerbackup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/ic_feature_power_backup"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:text="Power Backup"
+                        android:theme="@style/MyCheckbox" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <Button
+                android:id="@+id/btnRT_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_save"
+                android:text="Save"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

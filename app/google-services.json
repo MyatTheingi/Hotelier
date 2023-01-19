@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "283774795263",
+    "firebase_url": "https://solosoft-e8616.firebaseio.com",
+    "project_id": "solosoft-e8616",
+    "storage_bucket": "solosoft-e8616.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283774795263:android:3c1a3fc68c9c059e",
+        "android_client_info": {
+          "package_name": "com.example.mtg.prototype_four"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283774795263-reev5cpd2ugb88htg5dj9bf14egi824s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mtg.prototype_four",
+            "certificate_hash": "0b677d318824b4dac7aa912c02a91ecedc62b50b"
+          }
+        },
+        {
+          "client_id": "283774795263-nneila73i53s04q705nc2f1v47hqmacc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIvyDrnu26e_Wh5-Us8zaqb4HgYJAxTdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283774795263-nneila73i53s04q705nc2f1v47hqmacc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

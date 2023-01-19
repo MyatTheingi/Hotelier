@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/inner_margin_bottom">
+
+    <CheckBox
+        android:id="@+id/cb_bed_types"
+        android:layout_width="@dimen/BT_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:theme="@style/MyCheckbox" />
+
+    <TextView
+        android:id="@+id/txtBT_id"
+        android:layout_width="@dimen/BT_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="1"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtBT_name"
+        android:layout_width="@dimen/BT_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Deluxe"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtBT_dimen"
+        android:layout_width="@dimen/BT_medium_width"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Deluxe"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+
+    <ImageView
+        android:id="@+id/btnBT_delete"
+        android:layout_width="@dimen/BT_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_delete" />
+</LinearLayout>

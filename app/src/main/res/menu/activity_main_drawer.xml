@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group
+        android:id="@+id/navML_one"
+        android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_bed_types"
+            android:icon="@drawable/ic_menu_bed_types"
+            android:title="Bed Types" />
+
+        <item
+            android:id="@+id/nav_room_types"
+            android:icon="@drawable/ic_menu_room_types"
+            android:title="Room Types" />
+        <item
+            android:id="@+id/nav_rooms"
+            android:icon="@drawable/ic_menu_rooms"
+            android:title="Rooms" />
+
+
+    </group>
+
+    <item
+      android:id="@+id/navML_two"
+        android:title="Rates and Services">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_calendar"
+                    android:icon="@drawable/ic_menu_calendar"
+                    android:title="Calender" />
+                <item
+                    android:id="@+id/nav_availablity"
+                    android:icon="@drawable/ic_menu_availablity"
+                    android:title="Availability" />
+
+                <item
+                    android:id="@+id/nav_view_assign_calendar"
+                    android:icon="@drawable/ic_menu_view_assign_calendar"
+                    android:title="Assign Calendar" />
+
+                <item
+                    android:id="@+id/nav_services"
+                    android:icon="@drawable/ic_menu_services"
+                    android:title="Services" />
+
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/navRC"
+        android:title="Reception Counter">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_guests"
+                    android:icon="@drawable/ic_menu_guests"
+                    android:title="Guest" />
+                <item
+                    android:id="@+id/nav_walkin_reservations"
+                    android:icon="@drawable/ic_menu_walkin_reservations"
+                    android:title="Walk-in Reservations" />
+                <item
+                    android:id="@+id/nav_reports"
+                    android:icon="@drawable/ic_menu_reports"
+                    android:title="Reports"
+                    app:actionLayout="@layout/image_view" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/nav_AL"
+        android:title="Administration level">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_permissions"
+                    android:icon="@drawable/ic_menu_permissions"
+                    android:title="Permissions" />
+                <item
+                    android:id="@+id/nav_manage_staff"
+                    android:icon="@drawable/ic_menu_manage_staff"
+                    android:title="Manage Staff" />
+                <item
+                    android:id="@+id/nav_switch_user"
+                    android:icon="@drawable/ic_menu_switch_user"
+                    android:title="Switch User" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="System Setting">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_general"
+                    android:icon="@drawable/ic_menu_general"
+                    android:title="General" />
+
+                <item
+                    android:id="@+id/nav_change_password"
+                    android:icon="@drawable/ic_menu_change_password"
+                    android:title="Change Password" />
+                <item
+                    android:id="@+id/nav_help_feedback"
+                    android:icon="@drawable/ic_menu_help_feedback"
+                    android:title="Help and Feedback" />
+            </group>
+        </menu>
+    </item>
+</menu>

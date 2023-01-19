@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/inner_margin_bottom">
+
+    <CheckBox
+        android:theme="@style/MyCheckbox"
+        android:id="@+id/cb_walkin_reservation"
+        android:layout_width="@dimen/WR_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding" />
+
+    <TextView
+        android:id="@+id/txtWR_id"
+        android:layout_width="@dimen/WR_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="ID"
+        android:textSize="@dimen/inner_title_text_size" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/txtWR_name"
+        android:layout_width="@dimen/WR_large_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Name"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_nrc"
+        android:layout_width="@dimen/WR_large_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="NRC"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_ph"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Phone No"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_email"
+        android:layout_width="@dimen/WR_large_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Email"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_address"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Address"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_checkin"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Check In"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_checkout"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Check Out"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+
+    <TextView
+        android:id="@+id/txtWR_total"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Total"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_paid"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Paid"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_balance"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Balance"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtWR_bookingtime"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Booking time"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+
+    <TextView
+        android:id="@+id/txtWR_status"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Status"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+
+    <ImageView
+        android:id="@+id/btnWR_edit"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_edit" />
+
+    <ImageView
+        android:id="@+id/btnWR_delete"
+        android:layout_width="@dimen/WR_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_delete" />
+</LinearLayout>

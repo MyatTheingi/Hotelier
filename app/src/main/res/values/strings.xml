@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">My Hotelier</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Hotel Management System</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    ////main.xml in menu
+    <string name="action_logout">Log out</string>
+    <string name="action_help_feedback">Help and Feedback</string>
+
+
+    //add_fragment Rooms
+    <string-array name="choose_status">
+        <item>Room Status</item>
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+
+
+
+    //fragment Switch User
+    <string-array name="choose_role">
+        <item>Choose Role Name</item>
+    </string-array>
+    <string-array name="choose_staff">
+        <item>Choose Staff </item>
+    </string-array>
+
+
+
+    //fragment availability
+    <string-array name="choose_calendar">
+        <item>Choose Calendar</item>
+        <item>New Year</item>
+        <item>Thin Gyan</item>
+        <item>Thadin Gyut</item>
+    </string-array>
+
+    <string-array name="choose_room_types">
+        <item>Choose Room Type</item>
+        <item>Dulex</item>
+        <item>Double</item>
+        <item>Quard</item>
+        <item>Villa</item>
+    </string-array>
+
+
+    //add_fragment walkin_reservations
+    <string-array name="choose_booking_status">
+        <item>Choose Status</item>
+        <item>New</item>
+        <item>Check in</item>
+    </string-array>
+
+    <string-array name="all_room_types">
+        <item>All Room Types</item>
+        <item>Dulex</item>
+        <item>Double</item>
+        <item>Quard</item>
+        <item>Villa</item>
+    </string-array>
+
+    <string-array name="choose_services">
+        <item>Drink</item>
+        <item>Laundry</item>
+        <item>Snack</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

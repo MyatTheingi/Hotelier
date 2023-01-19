@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:radioButtonStyle">@style/MyRaidoButton</item>
+        <item name="android:checkboxStyle">@style/MyCheckbox</item>
+    </style>
+
+
+    //custom checkbox design
+
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#979797</item>
+        <item name="android:colorControlActivated">#9f52ba</item>
+        <item name="android:colorControlHighlight">#7b3094</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    //custom radio button design
+
+    <style name="MyRaidoButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">#979797</item>
+        <item name="android:colorControlActivated">#9f52ba</item>
+        <item name="android:colorControlHighlight">#7b3094</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+
+</resources>

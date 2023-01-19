@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add.AddServiceFragment">
+
+    <TextView
+        android:id="@+id/cancel_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:text="X"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/add_layoutS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel_service"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-60dp"
+        android:layout_marginRight="@dimen/title_margin_right"
+        android:background="@drawable/layout_administration"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Services"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Informations"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_cardviewS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_layoutS"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_horizontal_padding"
+            android:paddingLeft="@dimen/innerlayout_horizontal_padding"
+            android:paddingRight="@dimen/innerlayout_horizontal_padding"
+            android:paddingTop="@dimen/innerlayout_vertical_padding">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dataS_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="ID"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dataS_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </TableRow>
+
+
+                <TableRow android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dataS_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Type" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dataS_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Price"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnS_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_save"
+                android:text="Save"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

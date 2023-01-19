@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/inner_margin_bottom">
+
+    <CheckBox
+        android:id="@+id/cb_services"
+        android:layout_width="@dimen/S_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:theme="@style/MyCheckbox" />
+
+    <TextView
+        android:id="@+id/txtS_id"
+        android:layout_width="@dimen/S_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="233"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtS_name"
+        android:layout_width="@dimen/S_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="R003"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtS_type"
+        android:layout_width="@dimen/S_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Queen"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtS_price"
+        android:layout_width="@dimen/S_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Second"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <ImageView
+        android:id="@+id/btnS_edit"
+        android:layout_width="@dimen/S_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_edit" />
+
+    <ImageView
+        android:id="@+id/btnS_delete"
+        android:layout_width="@dimen/S_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_delete" />
+</LinearLayout>

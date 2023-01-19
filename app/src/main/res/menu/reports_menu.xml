@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_reports"
+        android:title="Reports" />
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_daily_occupancy"
+            android:title="Daily Occupancy" />
+        <item
+            android:id="@+id/menu_guest_reports"
+            android:title="Guest Reports" />
+        <item
+            android:id="@+id/menu_daily_reports"
+            android:title="Daily Reports" />
+        <item
+            android:id="@+id/menu_monthly_reports"
+            android:title="Monthly Reports" />
+        <item
+            android:id="@+id/menu_yearly_reports"
+            android:title="Yearly Reports" />
+
+    </group>
+
+</menu>

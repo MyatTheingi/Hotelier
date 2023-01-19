@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/layout_vertical_padding"
+    android:paddingLeft="@dimen/layout_horizontal_padding"
+    android:paddingRight="@dimen/layout_horizontal_padding"
+    android:paddingTop="@dimen/layout_vertical_padding"
+    tools:context=".main_fragment.Report_Guest">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-60dp"
+        android:layout_marginRight="@dimen/title_margin_right"
+        android:background="@drawable/layout_administration"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guest Report"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Guest Reports"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/normal_text_size" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtRG_search"
+            android:layout_width="@dimen/txtSearch_width"
+            android:layout_height="@dimen/txtSearch_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/spinner_design"
+            android:drawablePadding="@dimen/drawable_padding_size"
+            android:drawableRight="@drawable/ic_search"
+            android:hint="Search....."
+            android:padding="@dimen/inner_item_padding"
+            android:textSize="@dimen/normal_text_size" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutMS"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/innerlayout_vertical_padding"
+            android:paddingLeft="@dimen/innerlayout_horizontal_padding"
+            android:paddingRight="@dimen/innerlayout_horizontal_padding"
+            android:paddingTop="@dimen/innerlayout_vertical_padding">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/innerlayout_horizontal_padding"
+                android:fillViewport="true">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow android:layout_weight="10">
+
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="ID"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Guest Name"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Room Type"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Email"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Phone"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Country"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Qty"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Total"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Paid"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                        <TextView
+                            android:layout_margin="@dimen/inner_item_marging"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Balance"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/inner_title_text_size" />
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_marginBottom="@dimen/view_vertical_margin"
+                        android:layout_marginTop="@dimen/view_vertical_margin"
+                        android:background="@color/colorDarkGray" />
+
+                    <TableRow android:layout_weight="10">
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="1"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Mg Myint Tin"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Deluxe"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="mgmyinttin@gmail.com"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="09-454457120"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Myanmar"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="1"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="40000"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="40000"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="0"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_marginBottom="@dimen/view_vertical_margin"
+                        android:layout_marginTop="@dimen/view_vertical_margin"
+                        android:background="@color/colorDarkGray" />
+
+
+
+                    <TableRow android:layout_weight="10">
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="2"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Ma Sandi"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Deluxe"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="sandimyintmyat@gmail.com"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="09-454457120"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Myanmar"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="2"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="90000"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="70000"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="20000"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_marginBottom="@dimen/view_vertical_margin"
+                        android:layout_marginTop="@dimen/view_vertical_margin"
+                        android:background="@color/colorDarkGray" />
+
+
+                    <TableRow android:layout_weight="10">
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="3"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Ma Aye Pyae"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Quard"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="ayepyae@gmail.com"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="09-454457120"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="Myanmar"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="1"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="50000"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="45000"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:padding="@dimen/inner_item_padding"
+                            android:text="5000"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/normal_text_size" />
+
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

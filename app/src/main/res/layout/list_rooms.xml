@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/inner_margin_bottom">
+
+    <CheckBox
+        android:id="@+id/cb_rooms"
+        android:layout_width="@dimen/R_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:theme="@style/MyCheckbox" />
+
+    <TextView
+        android:id="@+id/txtR_id"
+        android:layout_width="@dimen/R_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="233"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtR_no"
+        android:layout_width="@dimen/R_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="R003"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtR_type"
+        android:layout_width="@dimen/R_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Queen"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtR_floor"
+        android:layout_width="@dimen/R_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Second"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+
+        android:id="@+id/txtR_status"
+        android:layout_width="@dimen/R_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Active"
+        android:textColor="@color/activeColor"
+        android:textSize="@dimen/inner_text_size" />
+
+    <ImageView
+        android:id="@+id/btnR_edit"
+        android:layout_width="@dimen/R_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_edit" />
+
+    <ImageView
+        android:id="@+id/btnR_delete"
+        android:layout_width="@dimen/R_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_delete" />
+</LinearLayout>

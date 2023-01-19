@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_yes"
+        android:paddingBottom="@dimen/innerlayout_horizontal_padding"
+        android:paddingLeft="@dimen/innerlayout_horizontal_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/innerlayout_horizontal_padding"
+            android:text="Confirm"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtConfirm_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cancle_confirm"
+            android:text="X"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/innerlayout_horizontal_padding">
+
+        <LinearLayout
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_alert_confirm" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/innerlayout_horizontal_padding"
+                android:text="Are you sure want to delete this record? \n You can\'t be backup again ! "
+                android:textSize="@dimen/normal_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtContent">
+
+            <Button
+                android:id="@+id/btnAlert_no"
+                android:layout_width="@dimen/txtConfirm_width"
+                android:layout_height="@dimen/txtConfirm_height"
+                android:layout_marginRight="@dimen/inner_item_marging"
+                android:background="@drawable/btn_no"
+                android:text="No"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_txtno"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAlert_yes"
+                android:layout_width="@dimen/txtConfirm_width"
+                android:layout_height="@dimen/txtConfirm_height"
+                android:background="@drawable/btn_yes"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

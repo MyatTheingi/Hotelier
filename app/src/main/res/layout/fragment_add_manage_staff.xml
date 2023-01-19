@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add.AddManageStaffFragment">
+
+    <LinearLayout
+        android:id="@+id/add_layoutMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/title_margin_right"
+        android:layout_marginBottom="-60dp"
+        android:background="@drawable/layout_administration"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Manage Staff"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Informations"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_cardviewMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_layoutMS"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/innerlayout_horizontal_padding"
+            android:paddingTop="@dimen/innerlayout_vertical_padding"
+            android:paddingRight="@dimen/innerlayout_horizontal_padding"
+            android:paddingBottom="@dimen/layout_horizontal_padding">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <TableRow>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittext_staff_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="ID"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittext_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="User name" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </TableRow>
+
+                <TableRow android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittext_nrc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="NRC" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittext_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </TableRow>
+
+                <TableRow android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittext_phone_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Contact No"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittext_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </TableRow>
+
+                <TableRow android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:padding="@dimen/inner_item_padding">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edittext_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Create Password"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/spinner_role"
+                        android:layout_height="@dimen/spinner_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/inner_item_marging"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_design"
+                        android:dropDownSelector="@color/colorPrimary"
+                        android:padding="@dimen/inner_item_padding" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_save"
+                android:text="Save"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

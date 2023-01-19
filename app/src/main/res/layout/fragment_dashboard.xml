@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:paddingBottom="@dimen/dashboard_vpadding"
+    android:paddingLeft="@dimen/dashboard_hpadding"
+    android:paddingRight="@dimen/dashboard_hpadding"
+    android:paddingTop="@dimen/dashboard_vpadding"
+    tools:context=".main_fragment.Dashboard">
+
+
+    <TableLayout
+        android:id="@+id/dashboard_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <TableRow
+            android:weightSum="2"
+            android:layout_marginBottom="@dimen/dashboard_margin">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dashboard_margin"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/img_guests"
+                    android:layout_width="@dimen/dasboard_ic_width"
+                    android:layout_height="@dimen/dashboard_ic_height"
+                    android:layout_marginBottom="-50dp"
+                    android:layout_marginLeft="@dimen/dashboard_margin_left"
+                    android:background="@drawable/dbtn_guest"
+                    android:elevation="20dp"
+                    android:src="@drawable/ic_menu_guests" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_guests">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/dashboard_margin"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16"
+                                android:textColor="@color/colorMenu"
+                                android:textSize="@dimen/normal_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Guest Count"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text_size" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/colorDarkGray" />
+
+                        <TextView
+                            android:id="@+id/txt_add_guest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorMakeReservation"
+                            android:padding="@dimen/dashboard_margin"
+                            android:text="Add More Guest"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/img_room_types"
+                    android:layout_width="@dimen/dasboard_ic_width"
+                    android:layout_height="@dimen/dashboard_ic_height"
+                    android:layout_marginBottom="-50dp"
+                    android:layout_marginLeft="@dimen/dashboard_margin_left"
+                    android:background="@drawable/btn_warning"
+                    android:elevation="20dp"
+                    android:src="@drawable/ic_menu_room_types" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_room_types">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/dashboard_margin"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:textColor="@color/colorMenu"
+                                android:textSize="@dimen/normal_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Room Types"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text_size" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/colorDarkGray" />
+
+                        <TextView
+                            android:id="@+id/txt_add_room_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWarning"
+                            android:padding="15dp"
+                            android:text="Add Bed Types"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="2"
+            android:layout_marginBottom="80dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dashboard_margin"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/img_rooms"
+                    android:layout_width="@dimen/dasboard_ic_width"
+                    android:layout_height="@dimen/dashboard_ic_height"
+                    android:layout_marginBottom="-50dp"
+                    android:layout_marginLeft="@dimen/dashboard_margin_left"
+                    android:background="@drawable/dbtn_rooms"
+                    android:elevation="20dp"
+                    android:src="@drawable/ic_menu_rooms" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_rooms">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/dashboard_margin"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="317"
+                                android:textColor="@color/colorMenu"
+                                android:textSize="@dimen/normal_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Room Count"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text_size" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/colorDarkGray" />
+
+                        <TextView
+                            android:id="@+id/txt_add_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorError"
+                            android:padding="15dp"
+                            android:text="Add More Rooms"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/img_walkin_reservations"
+                    android:layout_width="@dimen/dasboard_ic_width"
+                    android:layout_height="@dimen/dashboard_ic_height"
+                    android:layout_marginBottom="-50dp"
+                    android:layout_marginLeft="@dimen/dashboard_margin_left"
+                    android:background="@drawable/dbtn_reservations"
+                    android:elevation="20dp"
+                    android:src="@drawable/ic_menu_walkin_reservations" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_walkin_reservations">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/dashboard_margin"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="75"
+                                android:textColor="@color/colorMenu"
+                                android:textSize="@dimen/normal_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Reservations"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/normal_text_size" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/colorDarkGray" />
+
+                        <TextView
+                            android:id="@+id/txt_add_walkin_reservation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorReservation"
+                            android:padding="15dp"
+                            android:text="Add More Reservations"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="3"
+            android:layout_marginBottom="@dimen/dashboard_hpadding">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_daily_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-50dp"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="28dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rp_daily_sale" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_daily_sale">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/inner_item_marging"
+                        android:layout_marginTop="60dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dashboard_hpadding"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/inner_item_padding"
+                                android:text="Daily Sales"
+                                android:textColor="@color/colorMenu"
+                                android:textSize="@dimen/normal_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="55% increase in today sale"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/small_text_size" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="@dimen/view_vertical_margin"
+                            android:layout_marginTop="@dimen/view_vertical_margin"
+                            android:background="@color/colorForeground" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dashboard_hpadding"
+                            android:drawableLeft="@drawable/ic_time"
+                            android:drawablePadding="10dp"
+                            android:text="upload 4 minute ago"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_monthly_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-50dp"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="28dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rp_monthly_sale" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_monthly_sale">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/inner_item_marging"
+                        android:layout_marginTop="60dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dashboard_hpadding"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/inner_item_padding"
+                                android:text="Monthly Sales"
+                                android:textColor="@color/colorMenu"
+                                android:textSize="@dimen/normal_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50% increase in monthly sale"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/small_text_size" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="@dimen/view_vertical_margin"
+                            android:layout_marginTop="@dimen/view_vertical_margin"
+                            android:background="@color/colorForeground" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dashboard_hpadding"
+                            android:drawableLeft="@drawable/ic_time"
+                            android:drawablePadding="10dp"
+                            android:text="upload last one month ago"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_yearly_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-50dp"
+                    android:layout_marginLeft="30dp"
+                    android:elevation="28dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rp_yearly_sale" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_yearly_sale">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/inner_item_marging"
+                        android:layout_marginTop="60dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dashboard_hpadding"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/inner_item_padding"
+                                android:text="Daily Sales"
+                                android:textColor="@color/colorMenu"
+                                android:textSize="@dimen/normal_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="55% increase in today sale"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/small_text_size" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="@dimen/view_vertical_margin"
+                            android:layout_marginTop="@dimen/view_vertical_margin"
+                            android:background="@color/colorForeground" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dashboard_hpadding"
+                            android:drawableLeft="@drawable/ic_time"
+                            android:drawablePadding="10dp"
+                            android:text="upload 4 minute ago"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

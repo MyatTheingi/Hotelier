@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/inner_margin_bottom">
+
+    <CheckBox
+        android:id="@+id/cb_manage_staff"
+        android:layout_width="@dimen/MS_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:theme="@style/MyCheckbox" />
+
+    <TextView
+        android:id="@+id/txtMS_id"
+        android:layout_width="@dimen/MS_small_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="ID"
+        android:textSize="@dimen/inner_title_text_size" />
+
+    <TextView
+        android:id="@+id/txtMS_name"
+        android:layout_width="@dimen/MS_large_width"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="@dimen/inner_item_padding"
+        android:text="Name"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtMS_nrc"
+        android:layout_width="@dimen/MS_large_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:text="NRC"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtMS_ph"
+        android:layout_width="@dimen/MS_medium_width"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="@dimen/inner_item_padding"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtMS_email"
+        android:layout_width="@dimen/MS_extralarge_width"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/inner_item_padding"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtMS_address"
+        android:layout_width="@dimen/MS_large_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtMS_password"
+        android:layout_width="@dimen/MS_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+    <TextView
+        android:id="@+id/txtMS_role"
+        android:layout_width="@dimen/MS_medium_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inner_item_padding"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/inner_text_size" />
+
+
+    <ImageView
+        android:id="@+id/btnMS_edit"
+        android:layout_width="@dimen/MS_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_edit" />
+
+    <ImageView
+        android:id="@+id/btnMS_delete"
+        android:layout_width="@dimen/MS_medium_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/inner_item_padding"
+        android:src="@drawable/png_btn_delete" />
+</LinearLayout>
